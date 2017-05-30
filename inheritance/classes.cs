@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 namespace inheritance {//Så länge som funktioner är abstrakta är det inga problem med att ärva+implementera flera klasser med samma funktionsnamn
 
     interface Interface1 {
-        string InterfaceString1();
+        string InterfaceString1(); 
     }
 
     interface Interface2 {
@@ -19,6 +19,7 @@ namespace inheritance {//Så länge som funktioner är abstrakta är det inga pr
         public int AFlag { get; set; }
         public AbstractClass() { AFlag = 1; }
         public AbstractClass(int flag ) { AFlag = flag; }
+
 
         public abstract string Abstract();
         public virtual string Concrete() => "Abstract:Concrete";
